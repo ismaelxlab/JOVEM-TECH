@@ -1,0 +1,492 @@
+
+
+
+/* Reset e configurações básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo h1 {
+    color: #8a2be2;
+    font-size: 1.8rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #8a2be2;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.mobile-menu span {
+    width: 35px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 0;
+    transition: all 0.3s;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(138, 43, 226, 0.8), rgba(138, 43, 226, 0.6)), url('img00.png') no-repeat center center/cover;
+    color: white;
+    padding: 130px 0 100px;
+    text-align: center;
+
+    
+
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+/* tamaho do texto com efeito*/
+
+.hero-content h2 {
+    font-size:1.2rem;
+    margin-bottom: 10px;
+}
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: underline;
+
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-primary, .btn-secondary{
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background-color: #ff4081;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #e91e63;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-secondary:hover {
+    background-color: lightpink;
+    color: #8a2be2;
+}
+
+
+
+/* SEÇÃO SOBRE O ROJETO */
+
+.about {
+    padding: 80px 0;
+    background-color: #f5a4e2;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #8a2be2;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* SEÇÃO SOBRE A FUNDADORA*/
+
+.cria {
+    padding: 80px 0;
+    background-color:#f5a4e2;
+}
+
+.cria h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #8a2be2;
+}
+
+.cria-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.cria-text {
+    flex: 1;
+}
+
+.cria-text p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.cria-image {
+    flex: 1;
+}
+
+.cria-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Help Section */
+.help {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.help h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #8a2be2;
+}
+
+.emergency-contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.emergency-card {
+    background-color: #ff4081;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.emergency-card h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Resources Section */
+.resources {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.resources h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #8a2be2;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.resource-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+}
+
+.resource-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.resource-card h3 {
+    padding: 20px 20px 10px;
+    color: #8a2be2;
+}
+
+.resource-card p {
+    padding: 0 20px 20px;
+}
+
+/* Warning Signs Section */
+.warning-signs {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.warning-signs h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #8a2be2;
+}
+
+.signs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.sign-card {
+    background-color: #f0f0f0;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sign-card h3 {
+    color: #ff4081;
+    margin-bottom: 15px;
+}
+
+.sign-card ul {
+    list-style-position: inside;
+}
+
+.sign-card li {
+    margin-bottom: 8px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #8a2be2;
+}
+
+.contact-content {
+    display: flex;
+    gap: 40px;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+}
+
+.contact-details {
+    margin-top: 20px;
+}
+
+.contact-item {
+    margin-bottom: 20px;
+}
+
+.contact-item h4 {
+    color: #8a2be2;
+    margin-bottom: 5px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 50px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-section h3, .footer-section h4 {
+    color: #ff4081;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #ff4081;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    
+    .mobile-menu {
+        display: flex;
+    }
+    /*tamanho do texto cefeito*/
+
+    .hero-content h2 {
+        font-size:1 rem;
+
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .contact-content {
+        flex-direction: column;
+        flex
+    }
+    .cria-content {
+        flex-direction: column;
+    }
+    nav ul li {
+    margin-left: 06px;
+
+    }
+    
+
+
+        
+    .emergency-contact, .resources-grid, .signs-grid, .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
